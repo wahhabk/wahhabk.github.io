@@ -259,7 +259,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 2.0rem;
-    margin-top: 1.0rem;
+    margin-top: 0.6rem;
     font-size: 1.5rem;
 }
 .contact-icons a {
@@ -326,10 +326,12 @@ section {
 
 #experience .image-container img {
     border-radius: 0.75rem;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     width: 100%;
-    height: 320px;
+    height: auto;
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background-color: #f0f4f8; 
 }
 
 #experience .image-wrapper {
