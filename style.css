@@ -276,7 +276,8 @@ section {
 .card-img-top { /* This general .card-img-top style might affect other cards if not intended */
     width: 100%;
     height: 220px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #f8f9fa;
     border-top-left-radius: calc(0.75rem - 1px);
     border-top-right-radius: calc(0.75rem - 1px);
 }
