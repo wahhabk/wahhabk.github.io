@@ -12,6 +12,38 @@ let currentText = "";
 let isDeleting = false;
 const typingElement = document.getElementById("typing");
 
+
+//Light/Dark Mode Toggle Script
+const themeToggle = document.getElementById('theme-toggle');
+const icon = themeToggle.querySelector('i');
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme') || 'light-theme';
+document.body.classList.add(savedTheme);
+updateIcon(savedTheme);
+//Light/Dark Mode Toggle Script
+
+themeToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.contains('dark-theme');
+    if (isDark) {
+        document.body.classList.replace('dark-theme', 'light-theme');
+        localStorage.setItem('theme', 'light-theme');
+        updateIcon('light-theme');
+    } else {
+        document.body.classList.replace('light-theme', 'dark-theme');
+        localStorage.setItem('theme', 'dark-theme');
+        updateIcon('dark-theme');
+    }
+});
+
+function updateIcon(theme) {
+    if (theme === 'dark-theme') {
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+}
+
 function type() {
     if (!typingElement) return;
 

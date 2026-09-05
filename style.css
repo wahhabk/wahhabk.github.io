@@ -125,7 +125,7 @@ section {
     /* Default link color in collapsed menu */
     .navbar-dark .navbar-collapse.show .navbar-nav .nav-link,
     .navbar-dark .navbar-collapse.collapsing .navbar-nav .nav-link {
-/*         color: rgba(255, 255, 255, 0.55) !important; /* Default for items in collapsed menu */ */
+/*         color: rgba(255, 255, 255, 0.55) !important; /* Default for items in collapsed menu */ 
         color: #ffffff !important;
     }
 
@@ -378,7 +378,7 @@ section {
 }
 #car-rental-project:hover .carousel-control-prev-icon,
 #car-rental-project:hover .carousel-control-next-icon {
-    filter: invert(0%) grayscale(100%) brightness(200%); // Your desired hover filter for car-rental icons
+    filter: invert(0%) grayscale(100%) brightness(200%); /* Your desired hover filter for car-rental icons */
 }
 
 
@@ -396,7 +396,7 @@ section {
 }
 
 #car-rental-project:hover .carousel-indicators button {
-    background-color: rgba(230, 230, 230, 0.7); // Example: slightly off-white on hover if desired
+    background-color: rgba(230, 230, 230, 0.7); /* Example: slightly off-white on hover if desired */
 }
 
 #car-rental-project .carousel-indicators .active {
@@ -404,7 +404,7 @@ section {
 }
 
 #car-rental-project:hover .carousel-indicators .active {
-    background-color: #f0f0f0; // Example: slightly off-white on hover if desired
+    background-color: #f0f0f0; /* Example: slightly off-white on hover if desired */
 } */
 
 /* Typing Animation Styles */
@@ -622,5 +622,97 @@ section {
     color: #495057; /* A slightly muted text color */
     font-weight: 300 !important; /* Override Bootstrap if necessary to ensure light weight */
     margin-top: 1rem; /* Add some space above subheadings */
+}
+
+/* Light theme (default) */
+body.light-theme {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+/* Dark theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #e2e8f0;
+}
+
+body.dark-theme section {
+    background-color: #121212;
+}
+
+body.dark-theme #experience {
+    background-color: #1a1a2e;
+}
+
+body.dark-theme .experience-item {
+    background-color: #1e1e2e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body.dark-theme .experience-item h3 {
+    color: #93c5fd;
+}
+
+body.dark-theme .experience-item p {
+    color: #94a3b8;
+}
+
+body.dark-theme .skill-item {
+    background-color: #1e1e2e;
+    border-color: #2d2d3d;
+}
+
+body.dark-theme .skill-item .skill-icon,
+body.dark-theme .skill-item p {
+    color: #e2e8f0;
+}
+
+body.dark-theme .card.project-card {
+    background-color: #1e1e2e;
+    color: #e2e8f0;
+}
+
+body.dark-theme .card.project-card .card-title {
+    color: #e2e8f0;
+}
+
+body.dark-theme .card.project-card .card-text {
+    color: #94a3b8;
+}
+
+body.dark-theme #projects {
+    background-color: #1a1a2e;
+}
+
+body.dark-theme #activities {
+    background-color: #121212;
+}
+
+body.dark-theme .news-timeline li {
+    border-bottom-color: #2d2d3d;
+}
+
+body.dark-theme .news-date {
+    color: #94a3b8;
+}
+
+body.dark-theme .news-body {
+    color: #e2e8f0;
+}
+
+body.dark-theme footer {
+    background-color: #0a0a0a !important;
+}
+
+#theme-toggle {
+    color: rgba(255,255,255,0.55);
+    border: none;
+    background: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+#theme-toggle:hover {
+    color: #ffffff;
 }
 
