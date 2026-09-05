@@ -849,11 +849,11 @@ body.dark-theme .skill-item p {
 
 /* Projects */
 body.dark-theme #projects {
-    background-color: #0f172a !important;
+    background-color: #1e293b  !important;
 }
 
 body.dark-theme .card.project-card {
-    background-color: #1e293b !important;
+    background-color: #0f172a !important;
     color: #e2e8f0;
     border: 1px solid #2d3748;
 }
